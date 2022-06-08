@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Work Detail</title>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -11,88 +11,148 @@
   <body>
     <div class="py-5">
       <div class="max-w-[1350px] mx-auto px-5">
-        <a class="flex text-[#21243D] justify-end md:hidden block" href=""
-          ><img
-            src="https://res.cloudinary.com/dn3jydehx/image/upload/v1654653648/images-Assignment/menu_jzzhqy.png"
-            alt=""
-        /></a>
-        <ul class="md:flex justify-end space-x-10 hidden md:block">
-          <li>
-            <a
-              class="font-medium text-[#21243D] text-xl hover:text-[#FF6464]"
-              href="blog.html"
-              >Blog</a
-            >
-          </li>
-          <li>
-            <a
-              class="font-medium text-[#FF6464] text-xl hover:text-[#FF6464]"
-              href="works.html"
-              >Works</a
-            >
-          </li>
+        <div class="flex text-[#21243D] justify-end block">
+          <button id="button" class="md:hidden mb-2" href="">
+            <img
+              src="https://res.cloudinary.com/dn3jydehx/image/upload/v1654653648/images-Assignment/menu_jzzhqy.png"
+              alt=""
+            />
+          </button>
+        </div>
+        <div class="md:flex justify-end">
+          <ul
+            id="menu"
+            class="md:flex flex justify-end space-x-10 hidden md:block"
+          >
+            <li>
+              <a
+                class="font-medium text-[#21243D] text-xl hover:text-[#FF6464]"
+                href="blog.html"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                class="font-medium text-[#FF6464] text-xl hover:text-[#FF6464]"
+                href="works.html"
+                >Works</a
+              >
+            </li>
 
-          <li>
-            <a
-              class="font-medium text-[#21243D] text-xl hover:text-red-500"
-              href=""
-              >Contact</a
-            >
-          </li>
-        </ul>
-      </div>
-      <div class="max-w-4xl mx-auto px-5">
-        <div class="md:mb-4 md:mt-20 mt-5">
-          <h1
-            class="md:text-[34px] text-[30px] font-bold leading-[40px] md:leading-[49px] text-[#21243D]"
-          >
-          Designing Dashboards with<br>usability in mind
-          </h1>
-        </div>
-        <div class="space-x-4 leading-[60px]">
-          <span
-            class="text-lg inline-block font-black bg-[#FF7C7C] text-[#ffffff] rounded-2xl px-2.5"
-            >2020</span
-          ><span class="text-[#8695A4] font-normal text-xl"
-            >Dashboard, User Experience Design</span
-          >
-        </div>
-        <div class="text-center pt-24">
-          <ul class="flex justify-center space-x-9">
             <li>
-              <a href="https://www.facebook.com/profile.php?id=100009947949378"
-                ><img
-                  src="https://res.cloudinary.com/dn3jydehx/image/upload/v1654602028/images-Assignment/fb_oycy0o.png"
-                  alt=""
-              /></a>
-            </li>
-            <li>
-              <a href=""
-                ><img
-                  src="https://res.cloudinary.com/dn3jydehx/image/upload/v1654602028/images-Assignment/insta_r8fl6l.png"
-                  alt=""
-              /></a>
-            </li>
-            <li>
-              <a href=""
-                ><img
-                  src="https://res.cloudinary.com/dn3jydehx/image/upload/v1654602028/images-Assignment/Group_nnl733.png"
-                  alt=""
-              /></a>
-            </li>
-            <li>
-              <a href=""
-                ><img
-                  src="https://res.cloudinary.com/dn3jydehx/image/upload/v1654602028/images-Assignment/Linkedin_onqf8e.png"
-                  alt=""
-              /></a>
+              <a
+                class="font-medium text-[#21243D] text-xl hover:text-red-500"
+                href=""
+                >Contact</a
+              >
             </li>
           </ul>
-          <p class="text-[#21243D] text-sm font-normal my-5">
-            Copyright ©2020 All rights reserved
-          </p>
         </div>
       </div>
+      <div class="max-w-4xl mx-auto px-5">
+        <div>
+          <div class="md:mb-4 md:mt-24 mt-8">
+            <h2
+              class="md:max-w-[506px] md:text-[34px] text-[30px] font-bold leading-[40px] md:leading-[49px] text-[#21243D]"
+            >
+              Designing Dashboards with usability in mind
+            </h2>
+          </div>
+          <div class="space-x-4 my-6">
+            <span
+              class="text-lg inline-block font-black bg-[#FF7C7C] text-[#ffffff] rounded-2xl px-2.5"
+              >2020</span
+            ><span class="text-[#21243D] font-normal text-[18px] md:text-xl"
+              >Dashboard, User Experience Design</span
+            >
+          </div>
+          <p class="font-normal text-base leading-[23px]">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet.
+          </p>
+        </div>
+        <div class="my-8">
+          <img
+            class="w-full"
+            src="https://res.cloudinary.com/dn3jydehx/image/upload/v1654685214/images-Assignment/Rectangle_4_f2duae.png"
+            alt=""
+          />
+        </div>
+        <div class="md:mt-12">
+          <h2
+            class="text-[26px] md:text-3xl font-medium leading-[40px] text-[#21243D]"
+          >
+            Heading 1
+          </h2>
+          <h3
+            class="text-[20px] my-2 md:text-[24px] font-medium leading-[40px] md:leading-[50px] text-[#21243D]"
+          >
+            Heading 2
+          </h3>
+          <p class="text-[#000000] font-normal text-base leading-[23px]">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet.
+          </p>
+        </div>
+        <div class="my-8">
+          <img
+            class="w-full"
+            src="https://res.cloudinary.com/dn3jydehx/image/upload/v1654685214/images-Assignment/Rectangle_5_mjtfgo.png"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            class="w-full"
+            src="https://res.cloudinary.com/dn3jydehx/image/upload/v1654685213/images-Assignment/Rectangle_6_vm5aus.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="text-center pt-24">
+        <ul class="flex justify-center space-x-9">
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=100009947949378"
+              ><img
+                src="https://res.cloudinary.com/dn3jydehx/image/upload/v1654602028/images-Assignment/fb_oycy0o.png"
+                alt=""
+            /></a>
+          </li>
+          <li>
+            <a href=""
+              ><img
+                src="https://res.cloudinary.com/dn3jydehx/image/upload/v1654602028/images-Assignment/insta_r8fl6l.png"
+                alt=""
+            /></a>
+          </li>
+          <li>
+            <a href=""
+              ><img
+                src="https://res.cloudinary.com/dn3jydehx/image/upload/v1654602028/images-Assignment/Group_nnl733.png"
+                alt=""
+            /></a>
+          </li>
+          <li>
+            <a href=""
+              ><img
+                src="https://res.cloudinary.com/dn3jydehx/image/upload/v1654602028/images-Assignment/Linkedin_onqf8e.png"
+                alt=""
+            /></a>
+          </li>
+        </ul>
+        <p class="text-[#21243D] text-sm font-normal my-5">
+          Copyright ©2020 All rights reserved
+        </p>
+      </div>
     </div>
+    <script>
+      const button = document.getElementById("button");
+      const menu = document.getElementById("menu");
+      button.addEventListener("click", function () {
+        menu.classList.toggle("hidden");
+      });
+    </script>
   </body>
 </html>

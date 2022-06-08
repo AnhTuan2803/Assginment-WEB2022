@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -12,34 +12,42 @@
     <div class="py-5">
       <div class="max-w-5xl px-5 mx-auto">
         <div>
-          <a class="flex text-[#21243D] justify-end md:hidden block" href=""
-            ><img
-              src="https://res.cloudinary.com/dn3jydehx/image/upload/v1654653648/images-Assignment/menu_jzzhqy.png"
-              alt=""
-          /></a>
-          <ul class="md:flex justify-end space-x-10 hidden md:block">
-            <li>
-              <a
-                class="font-medium text-[#000000] text-xl hover:text-[#FF6464]"
-                href="works.html"
-                >Works</a
-              >
-            </li>
-            <li>
-              <a
-                class="font-medium text-[#000000] text-xl hover:text-[#FF6464]"
-                href="blog.html"
-                >Blog</a
-              >
-            </li>
-            <li>
-              <a
-                class="font-medium text-[#000000] text-xl hover:text-red-500"
-                href=""
-                >Contact</a
-              >
-            </li>
-          </ul>
+          <div class="flex text-[#21243D] justify-end block">
+            <button id="button" class="md:hidden mb-2">
+              <img
+                src="https://res.cloudinary.com/dn3jydehx/image/upload/v1654653648/images-Assignment/menu_jzzhqy.png"
+                alt=""
+              />
+            </button>
+          </div>
+          <div class="md:flex justify-end">
+            <ul
+              id="menu"
+              class="space-x-10 md:flex flex justify-end hidden md:block"
+            >
+              <li>
+                <a
+                  class="font-medium text-[#000000] text-xl hover:text-[#FF6464]"
+                  href="works.html"
+                  >Works</a
+                >
+              </li>
+              <li>
+                <a
+                  class="font-medium text-[#000000] text-xl hover:text-[#FF6464]"
+                  href="blog.html"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  class="font-medium text-[#000000] text-xl hover:text-red-500"
+                  href=""
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="mt-14 md:mt-32 mb-16 gap-8 grid md:grid-cols-3">
           <div
@@ -273,8 +281,13 @@
         </div>
       </div>
     </div>
-    <script type="module" src="./src/js/main.js">
-      
+    <script>
+      const button = document.getElementById("button");
+      const menu = document.getElementById("menu");
+      button.addEventListener("click", function () {
+        menu.classList.toggle("hidden");
+      });
     </script>
+    <script type="module" src="./src/js/main.js"></script>
   </body>
 </html>

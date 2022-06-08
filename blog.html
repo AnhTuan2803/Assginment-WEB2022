@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog</title>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -11,35 +11,43 @@
   <body>
     <div class="py-5">
       <div class="max-w-[1350px] mx-auto px-5">
-        <a class="flex text-[#21243D] justify-end md:hidden block" href=""
-          ><img
-            src="https://res.cloudinary.com/dn3jydehx/image/upload/v1654653648/images-Assignment/menu_jzzhqy.png"
-            alt=""
-        /></a>
-        <ul class="md:flex justify-end space-x-10 hidden md:block">
-          <li>
-            <a
-              class="font-medium text-[#FF6464] text-xl hover:text-[#FF6464]"
-              href="blog.html"
-              >Blog</a
-            >
-          </li>
-          <li>
-            <a
-              class="font-medium text-[#000000] text-xl hover:text-[#FF6464]"
-              href="works.html"
-              >Works</a
-            >
-          </li>
+        <div class="flex text-[#21243D] justify-end block">
+          <button id="button" class="md:hidden mb-2" href="">
+            <img
+              src="https://res.cloudinary.com/dn3jydehx/image/upload/v1654653648/images-Assignment/menu_jzzhqy.png"
+              alt=""
+            />
+          </button>
+        </div>
+        <div class="md:flex justify-end">
+          <ul
+            id="menu"
+            class="flex md:flex justify-end space-x-10 hidden md:block"
+          >
+            <li>
+              <a
+                class="font-medium text-[#FF6464] text-xl hover:text-[#FF6464]"
+                href="blog.html"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                class="font-medium text-[#000000] text-xl hover:text-[#FF6464]"
+                href="works.html"
+                >Works</a
+              >
+            </li>
 
-          <li>
-            <a
-              class="font-medium text-[#000000] text-xl hover:text-red-500"
-              href=""
-              >Contact</a
-            >
-          </li>
-        </ul>
+            <li>
+              <a
+                class="font-medium text-[#000000] text-xl hover:text-red-500"
+                href=""
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
       <div class="max-w-4xl mx-auto px-5">
         <div class="md:mb-6 md:mt-20 mt-5">
@@ -170,5 +178,12 @@
         </div>
       </div>
     </div>
+    <script>
+      const button = document.getElementById("button");
+      const menu = document.getElementById("menu");
+      button.addEventListener("click", function () {
+        menu.classList.toggle("hidden");
+      });
+    </script>
   </body>
 </html>
