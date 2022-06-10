@@ -1,12 +1,10 @@
-
-  const user= {
+const user= {
       name: "Tuan",
       img: "https://res.cloudinary.com/dn3jydehx/image/upload/v1654607870/images-Assignment/avata_idfhou.jpg",
       age: 19,
       address: "Tuyên Quang",
       description: "Cute",
   };
-
     
     function showUser(product) {
       if (product.length == 0) return false;
@@ -45,7 +43,7 @@
     
     document.getElementById("user").innerHTML = showUser(user);
     
-    // opject works in home
+    // object works in home
     const productWorks=[
       {
         id: 1,
@@ -115,7 +113,7 @@
       
       document.getElementById("productWorks").innerHTML = showProductWorks(productWorks);
 
-      //opject posts in home
+      //object posts in home
 
       const productPosts=[
         {
@@ -163,5 +161,3 @@
         }
         
         document.getElementById("productPosts").innerHTML = showProductPosts(productPosts);
-        
-      
