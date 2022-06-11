@@ -2,8 +2,8 @@ const user= {
       name: "Tuan",
       img: "https://res.cloudinary.com/dn3jydehx/image/upload/v1654607870/images-Assignment/avata_idfhou.jpg",
       age: 19,
-      address: "Tuyên Quang",
-      description: "Cute",
+      address: "Tuyen Quang",
+      description: "I am a young person passionate about website design. With my acquired knowledge as well as creativity, experience and responsibility at work, I hope to be able to contribute in some way to the development of the company.",
   };
     
     function showUser(product) {
@@ -19,13 +19,11 @@ const user= {
             Website Designer
           </h2>
           <p class="my-7 text-base font-normal text-[#21243D]">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-            amet sint. Velit officia consequat duis enim velit mollit.
-            Exercitation veniam consequat sunt nostrud amet.
+         I am ${product.age} years old, from ${product.address}, ${product.description}
           </p>
           <a
             href=""
-            class="text-[#ffffff] bg-[#FF6464] px-5 py-3.5 rounded font-medium text-xl"
+            class="text-[#ffffff] hover:shadow-lg hover:shadow-red-500 bg-[#FF6464] px-5 py-3.5 rounded font-medium text-xl"
           >
             Download Resume
           </a>
@@ -47,50 +45,67 @@ const user= {
     const productWorks=[
       {
         id: 1,
-        name: "Designing Dashboards",
-        img: "https://res.cloudinary.com/dn3jydehx/image/upload/v1654584687/images-Assignment/Rectangle_30_hazy3s.jpg",
-        date: 2020,
-        description: "Dashboard",
+        name: "Food page Designing",
+        img: "https://res.cloudinary.com/dn3jydehx/image/upload/v1654873546/images-Assignment/Screenshot_2022-06-10_220447_gebnfd.png",
+        date: 2022,
+        description: "Home Page",
         shortDescription:"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
     },
     {
         id: 2,
-        name: "Vibrant Portraits of 2020",
-        img: "https://res.cloudinary.com/dn3jydehx/image/upload/v1654584687/images-Assignment/Rectangle_32_mwjpyo.jpg",
-        date: 2018,
-        description: "Illustration",
+        name: "Shop Authority Pro",
+        img: "https://res.cloudinary.com/dn3jydehx/image/upload/v1654874762/images-Assignment/Screenshot_2022-06-10_222245_ojmkwb.png",
+        date: 2022,
+        description: "Home and Products",
         shortDescription:"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
     },
     {
-        id: 3,
-        name: "36 Days of Malayalam type",
-        img: "https://res.cloudinary.com/dn3jydehx/image/upload/v1654584687/images-Assignment/Rectangle_34_mqfpiu.jpg",
-        date: 2018,
-        description: "Typography",
+      id: 3,
+      name: "Assignment JavaScript",
+        img: "https://res.cloudinary.com/dn3jydehx/image/upload/v1654914787/images-Assignment/Screenshot_2022-06-11_093219_f4twp3.png",
+        date: 2022,
+        description: "SlideShow Page",
         shortDescription:"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
     },
-    ];
+    {
+        id: 4,
+        name: "School Website Design",
+        img: "https://res.cloudinary.com/dn3jydehx/image/upload/v1654874763/images-Assignment/Screenshot_2022-06-10_222530_crswvq.png",
+        date: 2022,
+        description: "Home Page",
+        shortDescription:"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+    },
+    {
+      id: 5,
+      name: "School Website Design Demo",
+        img: "https://res.cloudinary.com/dn3jydehx/image/upload/v1654874762/images-Assignment/Screenshot_2022-06-10_221933_cjj5gc.png",
+        date: 2022,
+        description: "Home Page",
+        shortDescription:"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+    },  
+      ];
       
       function showProductWorks(products) {
         if (!Array.isArray(products) || products.length == 0) return false;
       
         let result = "";
-        for (let i = 0; i < products.length; i++) {
+        for (let i = 0; i < 3; i++) {
             const product = products[i];
             result +=` <div
-            class="project-item border-b border-[#E0E0E0] grid md:grid-cols-[246px,auto] gap-4 py-6"
+            class="hover:shadow-lg hover:bg-gray-50 duration-300 shadow project-item border-b border-[#E0E0E0] grid md:grid-cols-[246px,auto] gap-4 py-6"
           >
+          
             <div>
             <a href="./workDetail.html?id=${product.id}">
             <img
-              class="w-full"
+              class="w-full h-full rounded-lg"
               src="${product.img}"
               alt=""
             /></a>
             </div>
             <div>
               <h2
-                class="text-[#21243D] font-bold text-[24px] md:text-3xl leading-[30px] md:leading-[44px]"
+                class="text-[#21243D] hover:text-red-500 font-bold text-[24px] md:text-3xl leading-[30px] md:leading-[44px]"
               >
               <a href="./workDetail.html?id=${product.id}">${product.name}</a>
               </h2>
@@ -119,14 +134,14 @@ const user= {
         {
           id: 1,
           title: "Making a design system from scratch",
-          date: "12 Feb 2020",
+          date: "12 Feb 2021",
           description: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
           shortDescription:"Design, Pattern",
       },
       {
         id: 2,
         title: "Creating pixel perfect icons in Figma",
-        date: "12 Feb 2020",
+        date: "12 Feb 2021",
         description: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
         shortDescription:"Figma, Icon Design",
     },
@@ -140,7 +155,7 @@ const user= {
               const product = products[i];
               result +=`<div class="bg-[#ffffff] rounded p-6 leading-none">
               <h2
-                class="leading-9 font-bold text-[22px] md:text-[26px] text-[#21243D]"
+                class="leading-9 hover:text-red-500 font-bold text-[22px] md:text-[26px] text-[#21243D]"
               >
               <a href="">${product.title}</a>
               </h2>

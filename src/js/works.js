@@ -1,36 +1,44 @@
 const productWorks=[
-    {
-      id: 1,
-      name: "Designing Dashboards",
-      img: "https://res.cloudinary.com/dn3jydehx/image/upload/v1654584687/images-Assignment/Rectangle_30_hazy3s.jpg",
-      date: 2020,
-      description: "Dashboard",
-      shortDescription:"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
-  },
   {
-      id: 2,
-      name: "Vibrant Portraits of 2020",
-      img: "https://res.cloudinary.com/dn3jydehx/image/upload/v1654584687/images-Assignment/Rectangle_32_mwjpyo.jpg",
-      date: 2018,
-      description: "Illustration",
-      shortDescription:"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
-  },
-  {
-      id: 3,
-      name: "36 Days of Malayalam type",
-      img: "https://res.cloudinary.com/dn3jydehx/image/upload/v1654584687/images-Assignment/Rectangle_34_mqfpiu.jpg",
-      date: 2018,
-      description: "Typography",
-      shortDescription:"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
-  },
-  {
+    id: 1,
+    name: "Food page Designing",
+    img: "https://res.cloudinary.com/dn3jydehx/image/upload/v1654873546/images-Assignment/Screenshot_2022-06-10_220447_gebnfd.png",
+    date: 2022,
+    description: "Home Page",
+    shortDescription:"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+},
+{
+    id: 2,
+    name: "Shop Authority Pro",
+    img: "https://res.cloudinary.com/dn3jydehx/image/upload/v1654874762/images-Assignment/Screenshot_2022-06-10_222245_ojmkwb.png",
+    date: 2022,
+    description: "Home and Products",
+    shortDescription:"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+},
+{
+  id: 3,
+  name: "Assignment JavaScript",
+    img: "https://res.cloudinary.com/dn3jydehx/image/upload/v1654914787/images-Assignment/Screenshot_2022-06-11_093219_f4twp3.png",
+    date: 2022,
+    description: "SlideShow Page",
+    shortDescription:"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+},
+{
     id: 4,
-    name: "Components",
-      img: "https://res.cloudinary.com/dn3jydehx/image/upload/v1654623762/images-Assignment/Rectangle_40_jz9zhi.png",
-      date: 2018,
-      description: "Components, Design",
-      shortDescription:"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
-  },
+    name: "School Website Design",
+    img: "https://res.cloudinary.com/dn3jydehx/image/upload/v1654874763/images-Assignment/Screenshot_2022-06-10_222530_crswvq.png",
+    date: 2022,
+    description: "Home Page",
+    shortDescription:"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+},
+{
+  id: 5,
+  name: "School Website Design Demo",
+    img: "https://res.cloudinary.com/dn3jydehx/image/upload/v1654874762/images-Assignment/Screenshot_2022-06-10_221933_cjj5gc.png",
+    date: 2022,
+    description: "Home Page",
+    shortDescription:"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+},  
   ];
     
     function showProducts(products) {
@@ -40,19 +48,19 @@ const productWorks=[
       for (let i = 0; i < products.length; i++) {
           const product = products[i];
           result +=`<div
-          class="project-item border-b border-[#E0E0E0] grid md:grid-cols-[246px,auto] gap-4 py-6"
+          class="hover:shadow hover:bg-gray-50 duration-300 border-b border-[#E0E0E0] grid md:grid-cols-[246px,auto] gap-4 py-6"
         >
           <div>
           <a href="./workDetail.html?id=${product.id}">
             <img
-              class="w-full"
+              class="w-full h-full rounded-lg"
               src="${product.img}"
               alt=""
             /></a>
           </div>
           <div>
             <h2
-              class="text-[#21243D] font-bold text-[24px] md:text-3xl leading-[30px] md:leading-[44px]"
+              class="hover:text-red-500 text-[#21243D] font-bold text-[24px] md:text-3xl leading-[30px] md:leading-[44px]"
             >
               <a href="./workDetail.html?id=${product.id}">${product.name}</a>
             </h2>

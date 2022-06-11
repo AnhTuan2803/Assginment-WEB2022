@@ -1,36 +1,62 @@
 const productWorkDetails=[
-    {
-      id: 1,
-      name: "Designing Dashboards",
-      img: "https://res.cloudinary.com/dn3jydehx/image/upload/v1654584687/images-Assignment/Rectangle_30_hazy3s.jpg",
-      date: 2020,
-      description: "Dashboard",
-      shortDescription:"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
-  },
   {
-      id: 2,
-      name: "Vibrant Portraits of 2020",
-      img: "https://res.cloudinary.com/dn3jydehx/image/upload/v1654584687/images-Assignment/Rectangle_32_mwjpyo.jpg",
-      date: 2018,
-      description: "Illustration",
-      shortDescription:"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
-  },
-  {
-      id: 3,
-      name: "36 Days of Malayalam type",
-      img: "https://res.cloudinary.com/dn3jydehx/image/upload/v1654584687/images-Assignment/Rectangle_34_mqfpiu.jpg",
-      date: 2018,
-      description: "Typography",
-      shortDescription:"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
-  },
-  {
+    id: 1,
+    name: "Food page Designing",
+    img: "https://res.cloudinary.com/dn3jydehx/image/upload/v1654873546/images-Assignment/Screenshot_2022-06-10_220447_gebnfd.png",
+    img1:"https://res.cloudinary.com/dn3jydehx/image/upload/v1654877395/images-Assignment/Screenshot_2022-06-10_230713_npvyya.png",
+    img2:"https://res.cloudinary.com/dn3jydehx/image/upload/v1654877396/images-Assignment/Screenshot_2022-06-10_230555_rwrys4.png",
+    img3:"https://res.cloudinary.com/dn3jydehx/image/upload/v1654877394/images-Assignment/Screenshot_2022-06-10_230836_qsqq77.png",
+    linkWeb:"https://lab3-web2022-seven.vercel.app/",
+    date: 2022,
+    description: "Home Page",
+    shortDescription:"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+},
+{
+    id: 2,
+    name: "Shop Authority Pro",
+    img: "https://res.cloudinary.com/dn3jydehx/image/upload/v1654874762/images-Assignment/Screenshot_2022-06-10_222245_ojmkwb.png",
+    img1:"https://res.cloudinary.com/dn3jydehx/image/upload/v1654878922/images-Assignment/Screenshot_2022-06-10_233350_j3jdlw.png",
+    img2:"https://res.cloudinary.com/dn3jydehx/image/upload/v1654878922/images-Assignment/Screenshot_2022-06-10_233502_kgbay4.png",
+    linkWeb:"https://36tvvx.csb.app/",
+    date: 2022,
+    description: "Home Page",
+    shortDescription:"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+},
+{
+  id: 3,
+  name: "Assignment JavaScript",
+    img: "https://res.cloudinary.com/dn3jydehx/image/upload/v1654914787/images-Assignment/Screenshot_2022-06-11_093219_f4twp3.png",
+    img1:"https://res.cloudinary.com/dn3jydehx/image/upload/v1654916348/images-Assignment/Screenshot_2022-06-11_095635j_xunfva.png",
+    img2:"https://res.cloudinary.com/dn3jydehx/image/upload/v1654916347/images-Assignment/Screenshot_2022-06-11_095738j_sztwtf.png",
+    img3:"https://res.cloudinary.com/dn3jydehx/image/upload/v1654916348/images-Assignment/Screenshot_2022-06-11_095835j_llwe6c.png",
+    linkWeb:"https://convmx.csb.app/",
+    date: 2022,
+    description: "SlideShow Page",
+    shortDescription:"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+},
+{
     id: 4,
-    name: "Components",
-      img: "https://res.cloudinary.com/dn3jydehx/image/upload/v1654623762/images-Assignment/Rectangle_40_jz9zhi.png",
-      date: 2018,
-      description: "Components, Design",
+    name: "School Website Design",
+    img: "https://res.cloudinary.com/dn3jydehx/image/upload/v1654874763/images-Assignment/Screenshot_2022-06-10_222530_crswvq.png",
+    img1:"https://res.cloudinary.com/dn3jydehx/image/upload/v1654916960/images-Assignment/Screenshot_2022-06-11_100715a_yy9twp.png",
+    img2:"https://res.cloudinary.com/dn3jydehx/image/upload/v1654916960/images-Assignment/Screenshot_2022-06-11_100812a_oasfd5.png",
+    img3:"https://res.cloudinary.com/dn3jydehx/image/upload/v1654916960/images-Assignment/Screenshot_2022-06-11_100859a_zlywgp.png",
+    linkWeb:"https://cr74yv.csb.app/",
+    date: 2022,
+    description: "Home Page",
+    shortDescription:"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+},
+  {
+    id: 5,
+    name: "School Website Design Demo",
+      img: "https://res.cloudinary.com/dn3jydehx/image/upload/v1654874762/images-Assignment/Screenshot_2022-06-10_221933_cjj5gc.png",
+      img1:"https://res.cloudinary.com/dn3jydehx/image/upload/v1654879387/images-Assignment/Screenshot_2022-06-10_234229_k63cmp.png",
+      linkWeb:"https://hv3l2v.csb.app/",
+      date: 2022,
+      description: "Home Page",
       shortDescription:"Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
   },
+  
   ];
   
   //Lấy ID trên url
@@ -63,16 +89,49 @@ const productWorkDetails=[
         >
       </div>
       <p class="font-normal text-base leading-[23px]">
-        ${product.shortDescription}
+        ${product.shortDescription}</br><span class="font-medium">Link Website: </span><a class="font-normal text-base text-red-600 hover:underline hover:decoration-1" href="${product.linkWeb}">${product.linkWeb}</a>
       </p>
     </div>
     <div class="my-8">
       <img
-        class="w-full"
+        class="shadow-xl w-full"
         src="${product.img}"
         alt=""
       />
-    </div>`;
+    </div>
+    <div class="md:mt-12">
+    <h2
+      class="text-[26px] my-2 md:text-3xl font-medium leading-[40px] md:leading-[50px] text-[#21243D]"
+    >
+    Other pages
+    </h2>
+    <p class="text-[#000000] font-normal text-base leading-[23px]">
+      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+      sint. Velit officia consequat duis enim velit mollit. Exercitation
+      veniam consequat sunt nostrud amet.
+    </p>
+  </div>
+  <div class="shadow-xl my-8">
+    <img
+      class="w-full"
+      src="${product.img1}"
+      alt=""
+    />
+  </div>
+  <div class="shadow-xl my-8">
+    <img
+      class="w-full"
+      src="${product.img2}"
+      alt=""
+    />
+  </div>
+  <div class="shadow-xl my-8">
+    <img
+      class="w-full"
+      src="${product.img3}"
+      alt=""
+    />
+  </div>`;
       return result;
   };
   

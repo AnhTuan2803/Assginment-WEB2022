@@ -1,29 +1,29 @@
 const productPosts=[
     {
       id: 1,
-      title: "UI Interactions of the week",
-      date: "12 Feb 2019",
+      title: "Making a design system from scratch",
+      date: "12 Feb 2021",
       description: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
-      shortDescription:"Express, Handlebars",
+      shortDescription:"Design, Pattern",
   },
   {
     id: 2,
-    title: "UI Interactions of the week",
-    date: "12 Feb 2019",
+    title: "Creating pixel perfect icons in Figma",
+    date: "12 Feb 2021",
     description: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
-    shortDescription:"Express, Handlebars",
+    shortDescription:"Figma, Icon Design",
 },
 {
     id: 3,
     title: "UI Interactions of the week",
-    date: "12 Feb 2019",
+    date: "12 Feb 2020",
     description: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
     shortDescription:"Express, Handlebars",
 },
 {
     id: 4,
     title: "UI Interactions of the week",
-    date: "12 Feb 2019",
+    date: "12 Feb 2020",
     description: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
     shortDescription:"Express, Handlebars",
 },
@@ -35,9 +35,9 @@ const productPosts=[
       let result = "";
       for (let i = 0; i < products.length; i++) {
           const product = products[i];
-          result +=` <div class="border-b border-[#E0E0E0] py-6">
+          result +=` <div class="hover:shadow hover:bg-gray-50 duration-300 border-b border-[#E0E0E0] py-6">
           <h2
-            class="text-[#21243D] md:text-[30px] text-[26px] font-medium leading-[44px]"
+            class="hover:text-red-500 text-[#21243D] md:text-[30px] text-[26px] font-medium leading-[44px]"
           >
             <a href="">${product.title}</a>
           </h2>
