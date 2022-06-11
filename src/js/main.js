@@ -23,7 +23,7 @@ const user= {
           </p>
           <a
             href=""
-            class="text-[#ffffff] hover:shadow-lg hover:shadow-red-500 bg-[#FF6464] px-5 py-3.5 rounded font-medium text-xl"
+            class="text-[#ffffff] hover:bg-red-500 bg-[#FF6464] px-5 py-3.5 rounded font-medium text-xl"
           >
             Download Resume
           </a>
@@ -92,7 +92,7 @@ const user= {
         for (let i = 0; i < 3; i++) {
             const product = products[i];
             result +=` <div
-            class="hover:shadow-lg hover:bg-gray-50 duration-300 shadow project-item border-b border-[#E0E0E0] grid md:grid-cols-[246px,auto] gap-4 py-6"
+            class="hover:shadow-lg hover:bg-gray-50 duration-300 project-item border-b border-[#E0E0E0] grid md:grid-cols-[246px,auto] gap-4 py-6"
           >
           
             <div>

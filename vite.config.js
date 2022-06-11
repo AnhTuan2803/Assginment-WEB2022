@@ -8,7 +8,8 @@ module.exports = defineConfig({
         main: resolve(__dirname, 'index.html'),
         blog: resolve(__dirname, 'blog.html'),
         works: resolve(__dirname, 'works.html'),
-        workDetail: resolve(__dirname, 'workDetail.html')
+        workDetail: resolve(__dirname, 'workDetail.html'),
+        contact: resolve(__dirname, 'contact.html')
       }
     }
   }
